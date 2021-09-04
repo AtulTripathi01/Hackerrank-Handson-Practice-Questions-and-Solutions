@@ -1,0 +1,70 @@
+ZZ Queue-Enqueue
+
+
+Write a program to create a queue of size N specified by the user. Then you will be given an K value. K value represents the no.of elements to be inserted into the queue. After completion of insertion process print the element from starting of the queue to ending of the queue.
+
+Input Format
+
+First line contains N value
+
+Second line contains K value followed by K no.of elements
+
+Constraints
+
+1<=N<=100
+
+1<=K<=100
+
+1<=element<=1000
+
+Output Format
+
+if N
+
+else print the elements in the queue.
+
+Sample Input 0
+
+5
+3
+1
+2
+3
+Sample Output 0
+
+1 2 3
+Explanation 0
+
+We have to define the queue of size "5" and we have to insert "3" elements in it.
+
+1 will be inserted into the queue first. Then on top of "1", "2" will be inserted and on top of "2" ,"3" will be inserted
+
+Now we have to print the elements from starting of the queue to ending of the queue
+
+
+
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
+
+int main() {
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */   
+    int n;
+    cin >> n;
+    int a [n];
+    int k;
+    cin >> k;
+    for(int i = 0; i < k; i++)
+    {
+        cin >> a[i];
+    }
+    for(int i = 0; i < k; i++)
+    {
+        cout << a[i] << " ";
+    }
+    return 0;
+}
